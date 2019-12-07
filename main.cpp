@@ -1,9 +1,14 @@
 #include <iostream>
-#include <map> //for std::map
+#include <vector> // for std::vector
+#include <set>   // for std::set
+#include <map>  // for std::map
 
+void setVector();
+void setSet();
 void setMap();
+
 int main()
 {
-    setMap();
+    
     return 0;
 }
