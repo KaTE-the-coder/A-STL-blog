@@ -11,7 +11,7 @@ In those lanes, lots of stencils(class/function templates) are on display, if yo
 ![](images/STL%20illustration.JPG)
 
 That's technically what STL is: a place that hold class and function templates. And when you want to use those templates, you create a statement with the form:
-class/function_template_name <type> class/function_name ;
+      *             class/function_template_name <type> class/function_name ;
 STL is very powerful because it is equipped with all the common classes and functions that you can use in your code, without STL, you will have to manually create new functions and classes everytime your data type needs to change, which could take a a long time. If you know how to use STL correctly, your coding will feel so much easier.
 By far the most commonly used functionality of the STL library are the STL container classes.
 The STL contains many different container classes that can be used in different situations.
@@ -35,9 +35,13 @@ In each container, there are a lot of member functions which you can use to perf
 Let's see how some of them works, shall we?
 1. Vector
 ![](images/vectorTable.JPG)
+
+
 Click the link below to see how vector works with its member functions:
 [vector codes](https://github.com/KaTE-the-coder/A-STL-blog/blob/master/vector.cpp)
 
+In main, type in the function setVector():
+[vector main](https://github.com/KaTE-the-coder/A-STL-blog/blob/master/main.cpp)
 
 When we output it, it will have the result:
 Before std::sort:
@@ -49,10 +53,16 @@ So the std::vector by default doesn't do the sorting, the order of the values in
 By using std:: sort from <algorithm> header file, can we sort the values.
 
 Fortunately there's one class container we can use to fix std:: vector downside, std::set.
+
 2. Set:
 ![](images/setTable.JPG)
+
+
 Click the link below to see how set works with its member functions:
-[set source code](https://github.com/KaTE-the-coder/A-STL-blog/blob/master/set.cpp)
+[set code](https://github.com/KaTE-the-coder/A-STL-blog/blob/master/set.cpp)
+
+In main, type in the function setSet():
+[set main](https://github.com/KaTE-the-coder/A-STL-blog/blob/master/main.cpp)
 
 
 The output will be:
@@ -63,6 +73,12 @@ As you can see, it automatically sort them in ascending order and no duplication
 std::map is similar to std::set however std::map has a combination of a key value and a mapped value while std::set only has the key value.
 ![](images/mapTable.JPG)
 
+
+Click the link below to see how map works with its member functions: 
+[map codes](https://github.com/KaTE-the-coder/A-STL-blog/blob/master/map.cpp)
+
+In main, type in the function setMap() :
+[map main](https://github.com/KaTE-the-coder/A-STL-blog/blob/master/main.cpp)
 
 The output will be:
 Ariadne 23
